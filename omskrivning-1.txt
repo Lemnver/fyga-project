@@ -1,0 +1,11 @@
+Två typer av VPN
+Även fast en VPN kan vara lite vad som helst finns det två huvudsakliga sätt att ansluta sig till en VPN-tjänst. Antingen med en Remote access VPN eller en site to site VPN.
+	Remote access VPN möjliggör för användaren att komma åt en server på ett privat nätverk genom ett medium så som internet. Användaren har oftast någon form av programvara som ansvarar för att verifiera sig mot VPN-servern, att kryptera och avkryptera data samt erbjuda användaren med olika inställningar.
+	Site to site VPN möjliggör för företag, organisationer etc. att koppla samman två eller fler LAN-nätverk som är separerade geografiskt. Ofta vid en site to site VPN finns det inga program som användarna måste installera utan allt sker per automatik tack vare en dedikerad VPN server vid varje nätverk. Program som sköter verifiering, kryptering etc. kan också installeras vid nätverkens routrar, därför kallas site to site VPN ofta för router to router VPN.
+	
+Autentisering
+För att en användare ska få tillgång till ett säkert VPN-nätverket måste användaren först autentisera sig. Detta kan vara genom ett säkert lösenord användaren valt eller en biometrisk identitet så som ett fingeravtryck. Användaren kan också ha en krypterat certifikat lagrat på sin dator som verifieras mot VPN-servern. Det är även viktigt att VPN-servern kan verifiera sig mot användaren så att användaren inte skickar känslig data till en server som bara utger sig vara del av VPN-tjänsten. 
+
+Datans integritet kan även säkerställas genom att checksums används. Checksums är siffersummor man fått genom att sätta in datan i specialiserade algoritmer. Denna teknik används just för att verifiera att datan inte ändrats på vägen till användaren.
+
+ Beroende på vilka säkerhetsprotokoll VPN-tjänsten nyttjar används kryptografiska nycklar på olika sätt. Exempelvis public-private nyckelpar som fungerar genom att kryptera och avkryptera data så att även om datan faller i fel händer är den meningslös. Det är bara den tänkta mottagaren som kan avkryptera datan och använda den.
